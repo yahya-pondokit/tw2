@@ -1,0 +1,33 @@
+<?php
+session_start();
+if (isset($_SESSION['login'])) {
+
+	include 'connect.php';
+	
+	$username    = isset($_POST['username']) ? $_POST['username'] : '';
+	$author_mail   = isset($_POST['author_mail']) ? $_POST['author_mail'] : '';
+	$author_name   = isset($_POST['author_name']) ? $_POST['author_name'] : '';
+	$id   = isset($_POST['id']) ? $_POST['id'] : '';
+	if (!empty($name) && !empty($author_mail)) {
+
+		mysqli_query($connect, "
+			UPDATE category 
+			SET username = '$name', author_mail = '$author_mail'
+			WHERE id_category = '$id'
+			");
+		
+		// echo $name.$author_mail.$id;die();
+		header("location:../admin/category.php");
+
+	} else {
+		echo "Silahkan lengkapi data <a href='../admin/c_edit.php'>kategori</a>";
+
+	}
+
+
+} else {
+
+  	echo "Please <a href='../login.php'>login</a> first.";
+
+}
+?>

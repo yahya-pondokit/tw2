@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/* ------------ CSS STARTS HERE -------------- */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+body {
+	font-family: 'Lato', sans-serif;
+	background: #F6F8FB;
+}
+#container {
+}
+.dataTables_wrapper {
+	/* width: 100%!important; */
+	box-sizing: border-box!important;
+	padding: 5px!important;
+}
+.dataTable tbody td {
+	border: 1px solid darkgray;
+}
+.wrapper {
+	max-width: 1100px;
+	margin: auto;
+}
+#header {
+	background: #5C6BC0;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+.noise {
+	margin-top: 80px;
+}
+#header h1 {
+	font-size: 30px;
+	padding: 17px;
+	color: white;
+	z-index: 3;
+}
+#sidebar-menu {
+	float: left;
+	width: 23%;
+	box-sizing: border-box;
+	padding-right: 15px;
+}
+.raito {
+	float: right;
+}
+.adede {
+	margin: 5px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #5C6BC0;
+	padding: 10px 20px;
+}
+.adede a {
+	text-decoration: none;
+	color: white;
+}
+.button {
+	margin: 5px;
+	border-radius: 2px;
+	display: inline-block;
+	padding: 5px 10px;
+	background: #5C6BC0;
+}
+.red {
+	background: #d52941;
+}
+.sidebar-list .reds a {
+	color: #a5a5a5;
+}
+.button a {
+	text-decoration: none;
+	color: white;
+}
+.sidebar-list {
+	padding: 0px 10px 15px;
+	background: #5C6BC0;
+}
+.sidebar-list li {
+	padding: 15px 10px 5px;
+	background: #5C6BC0;
+}
+.sidebar-list a {
+	padding-bottom: 7px;
+	font-size: 18px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #999;
+}
+.sidebar-list p {
+	padding-bottom: 7px;
+	font-size: 18px;
+	display: block;
+	text-decoration: none;
+	color: #333;
+	border-bottom: 1px solid #999;
+}
+#main-menu {
+	float: right;
+	width: 77%;
+	background: #fff;
+	box-shadow: 0px 0px 25px #dadada;
+	margin-bottom: 20px;
+}
+.content {
+	padding: 20px;
+}
+.content h1 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.content h3 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.box-content {
+	background: #dadada;
+	border-radius: 3px;
+	padding: 10px 3px;
+}
+.form-style {
+	box-sizing: border-box;
+	padding: 5px 20px 0px 5px;
+}
+.form-style label, .form-radio label:first-child {
+	width: 27%;
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 4px
+}
+label.error {
+	font-size: small;
+	position: relative;
+	left: 50%;
+	text-align: center;
+	color: #d52941;
+}
+.form-style input {
+	box-sizing: border-box;
+	width: 70%;
+	padding: 3px 8px;
+	border-radius: 3px;
+	border: 1px solid #999999;
+}
+.form-style select {
+	box-sizing: border-box;
+	padding: 3px;
+	border-radius: 3px;
+	border: 1px solid #999999;
+}
+.form-sub {
+	text-align: right;
+	margin: 10px;
+	padding-right: 32px;
+}
+.form-sub input {
+	border-radius: 2px;
+	display: inline-block;
+	background: #5C6BC0;
+	padding: 10px 20px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: medium;
+	border: 0;
+	cursor: pointer;
+}
+.cke {
+	margin: 10px!important;
+	margin-top: 25px!important;
+}
